@@ -1,0 +1,31 @@
+{
+  "title": "food",
+  "count": 1,
+  "data":[
+     {
+      "Name":"Celebration Cake",
+      "Furniture_Initial":"Prep Station",
+      "Furniture_Additional":[{"Name":"Oven"}],
+      "Craft_Count":3,
+      "Focus":825,
+      "Cooking_Time":300,
+      "Effects":[
+        {"Name":"None","Description":""}
+      ],
+      "Ingredients_Initial":[
+        {"Name":"Blueberries","Count":1}
+      ],
+      "Ingredients_Other":[
+        {"Name":"Butter","Count":4},
+        {"Name":"Egg","Count":3},
+        {"Name":"Flour","Count":3},
+        {"Name":"Sweet Leaf","Count":4},
+        {"Name":"Any Fruit","Count":3},
+        {"Name":"Sugar","Count":3},
+        {"Name":"Milk","Count":1}
+      ],
+      "Selling_Price_Normal":"147",
+      "Selling_Price_Star":"220"
+    }
+  ]
+}

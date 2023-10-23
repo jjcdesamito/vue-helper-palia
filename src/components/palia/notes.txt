@@ -1,0 +1,19 @@
+{
+      "Name":"",
+      "Furniture_Initial":"",
+      "Furniture_Additional":[""],
+      "Craft_Count":3,
+      "Focus":0,
+      "Cooking_Time":0,
+      "Effect":[
+        {"Name":"","Description":""}
+      ],
+      "Ingredients_Initial":[
+        {"Name":"","Count":0}
+      ],
+      "Ingredients_Other":[
+        {"Name":"","Count":0}
+      ],
+      "Selling_Price_Normal":"",
+      "Selling_Price_Star":""
+    },

@@ -1,20 +1,20 @@
 <script setup>
-import MainPage from './palia/MainPage.vue'
+import PaliaMainPage from './palia/Palia_MainPage.vue'
 </script>
 
 <template>
-  <div class="gridWrapper">
-    <div class="gridMain">
-      <div class="title">
-        Blak Book
-      </div>
-      <div class="description">
-        A site created by "BlakWaltz" that can serve as a helper or a guide to some specific games played by him.
-      </div>
-    </div>
-    <div class="gridSub">
-      <MainPage/>
-    </div>
+  <div class="title">
+    Blak Book
+  </div>
+  <div class="description">
+    A site created by "BlakWaltz" that can serve as a helper or a guide to some specific games played by him.
+  </div>
+
+  <div class="">
+    <!-- buttons -->
+  </div>
+  <div>
+    <PaliaMainPage />
   </div>
 </template>
 
@@ -39,19 +39,5 @@ import MainPage from './palia/MainPage.vue'
     text-align: center;
   }
 
-  .gridWrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .gridMain {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .gridSub {
-    grid-column: 2;
-    grid-row: 1;
-  }
 }
 </style>
