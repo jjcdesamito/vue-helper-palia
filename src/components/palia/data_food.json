@@ -9,7 +9,7 @@
       "Craft_Count":3,
       "Focus":825,
       "Cooking_Time":300,
-      "Effects":[
+      "Effect":[
         {"Name":"None","Description":""}
       ],
       "Ingredients_Initial":[
@@ -26,6 +26,51 @@
       ],
       "Selling_Price_Normal":"147",
       "Selling_Price_Star":"220"
+    },
+    {
+      "Name":"Chapaa Asada Tacos",
+      "Furniture_Initial":"Prep Station",
+      "Furniture_Additional":["Stove"],
+      "Craft_Count":3,
+      "Focus":250,
+      "Cooking_Time":140,
+      "Effect":[
+        {"Name":"None","Description":""}
+      ],
+      "Ingredients_Initial":[
+        {"Name":"Salt","Count":1}
+      ],
+      "Ingredients_Other":[
+        {"Name":"Chapaa Meat","Count":1},
+        {"Name":"Butter","Count":1},
+        {"Name":"Spice Sprouts","Count":1},
+        {"Name":"Corn","Count":1},
+        {"Name":"Onion","Count":1}
+      ],
+      "Selling_Price_Normal":"46",
+      "Selling_Price_Star":"69"
+    },
+    {
+      "Name":"Chapaa Onigiri",
+      "Furniture_Initial":"Prep Station",
+      "Furniture_Additional":["Stove"],
+      "Craft_Count":3,
+      "Focus":200,
+      "Cooking_Time":120,
+      "Effect":[
+        {"Name":"None","Description":""}
+      ],
+      "Ingredients_Initial":[
+        {"Name":"Salt","Count":1}
+      ],
+      "Ingredients_Other":[
+        {"Name":"Rice","Count":1},
+        {"Name":"Chapaa Meat","Count":1},
+        {"Name":"Butter","Count":1},
+        {"Name":"Spice Sprouts","Count":1}
+      ],
+      "Selling_Price_Normal":"30",
+      "Selling_Price_Star":"45"
     }
   ]
 }

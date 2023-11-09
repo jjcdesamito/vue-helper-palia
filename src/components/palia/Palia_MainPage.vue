@@ -3,9 +3,9 @@ import dataFood from './data_food.json'
 
 let date = new Date();
 var utcDate = new Date(date.toUTCString());
-let dtCurrent = new Date(utcDate.toLocaleString("en-US", { timeZone: "America/Santiago" }));
+let dtCurrent = new Date(utcDate.toLocaleString("en-US", { timeZone: "America/Los_Angeles" }));
 let dtCurrentDateOnly = new Date((new Date(dtCurrent)).setHours(0, 0, 0, 0));
-let spanSeconds = ((dtCurrent.getTime() - dtCurrentDateOnly.getTime()) / 1000) + 5;
+let spanSeconds = ((dtCurrent.getTime() - dtCurrentDateOnly.getTime()) / 1000);
 
 export default {
     name: "GameClock",
@@ -16,7 +16,10 @@ export default {
             ampm: '',
             minutes: 0,
             seconds: 0,
-            dataList: dataFood
+            dataList: dataFood,
+            searchValue: '',
+            sortBy: 'name',
+            ascending: true,
         }
     },
     mounted() {
@@ -32,10 +35,48 @@ export default {
             let paliaHour = ((paliaSeconds / 60) / 60) % 24;
             this.timestamp = dtCurrentDateOnly;
 
-            this.hour = String(Math.trunc(paliaHour % 12)).padStart(2, '0');
-            this.ampm = paliaHour < 13 ? 'AM' : 'PM';
+            this.hour = String(Math.trunc(paliaHour % 12)) == '0' ? '12' : String(Math.trunc(paliaHour % 12));
+            this.ampm = paliaHour < 12 ? 'AM' : 'PM';
             this.minutes = String(Math.trunc(paliaMinute)).padStart(2, '0');
             this.seconds = utcDate;
+        }
+    },
+    computed: {
+        filteredRecipes() {
+            let tempRecipes = this.dataList.data
+
+            // Process search input
+            if (this.searchValue != '' && this.searchValue) {
+                tempRecipes = tempRecipes.filter((item) => {
+                    return item.Name
+                        .toUpperCase()
+                        .includes(this.searchValue.toUpperCase())
+                })
+            }
+
+            tempRecipes = tempRecipes.sort((a, b) => {
+                if (this.sortBy == 'name') {
+                    let fa = a.Name.toLowerCase(), fb = b.Name.toLowerCase()
+
+                    if (fa < fb) {
+                        return -1
+                    }
+                    if (fa > fb) {
+                        return 1
+                    }
+                    return 0
+                }
+                else if (this.sortBy == 'sellingPrice') {
+                    return a.Selling_Price_Normal - b.Selling_Price_Normal
+                }
+            })
+
+            // Show sorted array in descending or ascending order
+            if (!this.ascending) {
+                tempRecipes.reverse()
+            }
+
+            return tempRecipes
         }
     },
     beforeDestroy() {
@@ -56,69 +97,82 @@ export default {
             Current Time (Approximate)
         </div>
     </div>
-    <div>
-        <!-- sort -->
-    </div>
+
     <!-- items -->
     <div class="listContainerMain">
-        <div class="itemContainer" v-for="item in dataList.data" :key="item.Name">
-            <div class="descContainer">
-                <div class="descTitle">Name</div>
-                <div class="descItem">{{ item.Name }}</div>
-            </div>
-            <div class="descContainer">
-                <div class="descTitle">Furniture</div>
-                <div class="descItem">{{ item.Furniture_Initial }}</div>
-            </div>
-            <div class="descContainer">
-                <div class="descTitle">Additional Furnitures</div>
-                <div class="descItem" v-for="Furniture_Additional in item.Furniture_Additional" :key="item.Name">
-                    <div class="descItemSub1">{{ Furniture_Additional.Name }}</div>
-                </div>
-            </div>
 
-            <div class="descContainer">
-                <div class="descTitle">Effects</div>
-                <div class="descItem" v-for="Effects in item.Effects" :key="item.Name">
-                    <div class="descItemSub1">{{ Effects.Name }}</div>
-                    <div class="descItemSub2">{{ Effects.Description }}</div>
-                </div>
-            </div>
-            <div class="descContainer">
-                <div class="descTitle">Initial Ingredients</div>
-                <div class="descItem" v-for="Ingredients_Initial in item.Ingredients_Initial" :key="item.Name">
-                    <div class="descItemSub1">{{ Ingredients_Initial.Name }}</div>
-                    <div class="descItemSub2">x{{ Ingredients_Initial.Count }}</div>
-                </div>
-            </div>
-            <div class="descContainer">
-                <div class="descTitle">Additional Ingredients</div>
-                <div class="descItem" v-for="Ingredients_Other in item.Ingredients_Other" :key="item.Name">
-                    <div class="descItemSub1">{{ Ingredients_Other.Name }}</div>
-                    <div class="descItemSub2">x{{ Ingredients_Other.Count }}</div>
-                </div>
-            </div>
-            <div class="descContainerInline">
-                <div class="descTitle">Craft Count</div>
-                <div class="descItem">x{{ item.Craft_Count }}</div>
-            </div>
-            <div class="descContainerInline">
-                <div class="descTitle">Focus</div>
-                <div class="descItem">{{ item.Focus }}</div>
-            </div>
-            <div class="descContainerInline">
-                <div class="descTitle">Cooking Time</div>
-                <div class="descItem">{{ item.Cooking_Time }}</div>
-            </div>
-            <div class="descContainerInline">
-                <div class="descTitle">Selling Price</div>
-                <div class="descItem">{{ item.Selling_Price_Normal }}</div>
-            </div>
-            <div class="descContainerInline">
-                <div class="descTitle">Selling Price (Star)</div>
-                <div class="descItem">{{ item.Selling_Price_Star }}</div>
-            </div>
+        <div>
+            <input type="text" v-model="searchValue" placeholder="Search Recipe" id="search-input">
+            <select name="sortBy" id="select" v-model="sortBy">
+                <option value="name">Name</option>
+                <option value="sellingPrice">Selling Price</option>
+            </select>
+            <button v-on:click="ascending = !ascending" class="sort-button">
+                <i v-if="ascending">Ascending</i>
+                <i v-else>Descending</i>
+            </button>
         </div>
+        <TransitionGroup name="recipe">
+            <div class="itemContainer" v-for="item in filteredRecipes" :key="item.Name">
+                <div class="descContainer">
+                    <div class="descTitle">Name</div>
+                    <div class="descItem">{{ item.Name }}</div>
+                </div>
+                <div class="descContainer">
+                    <div class="descTitle">Furniture</div>
+                    <div class="descItem">{{ item.Furniture_Initial }}</div>
+                </div>
+                <div class="descContainer">
+                    <div class="descTitle">Additional Furnitures</div>
+                    <div class="descItem" v-for="Furniture_Additional in item.Furniture_Additional" :key="item.Name">
+                        <div class="descItemSub1">{{ Furniture_Additional.Name }}</div>
+                    </div>
+                </div>
+
+                <div class="descContainer">
+                    <div class="descTitle">Effect</div>
+                    <div class="descItem" v-for="Effect in item.Effect" :key="item.Name">
+                        <div class="descItemSub1">{{ Effect.Name }}</div>
+                        <div class="descItemSub2">{{ Effect.Description }}</div>
+                    </div>
+                </div>
+                <div class="descContainer">
+                    <div class="descTitle">Initial Ingredients</div>
+                    <div class="descItem" v-for="Ingredients_Initial in item.Ingredients_Initial" :key="item.Name">
+                        <div class="descItemSub1">{{ Ingredients_Initial.Name }}</div>
+                        <div class="descItemSub2">x{{ Ingredients_Initial.Count }}</div>
+                    </div>
+                </div>
+                <div class="descContainer">
+                    <div class="descTitle">Additional Ingredients</div>
+                    <div class="descItem" v-for="Ingredients_Other in item.Ingredients_Other" :key="item.Name">
+                        <div class="descItemSub1">{{ Ingredients_Other.Name }}</div>
+                        <div class="descItemSub2">x{{ Ingredients_Other.Count }}</div>
+                    </div>
+                </div>
+                <div class="descContainerInline">
+                    <div class="descTitle">Craft Count</div>
+                    <div class="descItem">x{{ item.Craft_Count }}</div>
+                </div>
+                <div class="descContainerInline">
+                    <div class="descTitle">Focus</div>
+                    <div class="descItem">{{ item.Focus }}</div>
+                </div>
+                <div class="descContainerInline">
+                    <div class="descTitle">Cooking Time</div>
+                    <div class="descItem">{{ item.Cooking_Time }}</div>
+                </div>
+                <div class="descContainerInline">
+                    <div class="descTitle">Selling Price</div>
+                    <div class="descItem">{{ item.Selling_Price_Normal }}</div>
+                </div>
+                <div class="descContainerInline">
+                    <div class="descTitle">Selling Price (Star)</div>
+                    <div class="descItem">{{ item.Selling_Price_Star }}</div>
+                </div>
+            </div>
+        </TransitionGroup>
+
     </div>
 </template>
 
@@ -138,7 +192,6 @@ export default {
     border-style: solid;
     border-width: 0.1em;
     border-color: white;
-    border-radius: 1em;
     margin: 1em;
     padding: 1em;
     max-width: 18em;
@@ -161,13 +214,18 @@ export default {
     border-style: solid;
     border-width: 0.1em;
     border-color: white;
-    border-radius: 1em;
     margin: 1em;
     padding: 1em;
 }
 
 .itemContainer {
     display: block;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: white;
+    margin: 1em 0;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 
@@ -204,5 +262,17 @@ export default {
     display: inline-block;
     margin: 0.1em;
     padding: 0 0 0 0.5em;
+}
+
+.recipe-enter-active, .recipe-leave-active{
+  transition: .5s ease all;
+}
+
+.recipe-enter-from{
+  opacity:0;
+  transform: scale(0.6);
+}
+.recipe-leave-to {
+  opacity: 0;
 }
 </style>
