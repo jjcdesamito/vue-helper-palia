@@ -2,75 +2,877 @@
   "title": "food",
   "count": 1,
   "data":[
-     {
-      "Name":"Celebration Cake",
-      "Furniture_Initial":"Prep Station",
-      "Furniture_Additional":[{"Name":"Oven"}],
-      "Craft_Count":3,
-      "Focus":825,
-      "Cooking_Time":300,
-      "Effect":[
-        {"Name":"None","Description":""}
+    {
+      "Name": "Akwinduu Chapaa",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [
+        {"Name": "Butter"},
+        {"Name": "Potato"},
+        {"Name": "Any Mushroom"},
+        {"Name": "Wild Garlic"},
+        {"Name": "Spice Sprouts"}
       ],
-      "Ingredients_Initial":[
-        {"Name":"Blueberries","Count":1}
+      "Craft_Count": 3,
+      "Focus": 250,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Chapaa Meat", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Butter", "Count": 1},
+        {"Name": "Potato", "Count": 1},
+        {"Name": "Any Mushroom", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1}
       ],
-      "Ingredients_Other":[
-        {"Name":"Butter","Count":4},
-        {"Name":"Egg","Count":3},
-        {"Name":"Flour","Count":3},
-        {"Name":"Sweet Leaf","Count":4},
-        {"Name":"Any Fruit","Count":3},
-        {"Name":"Sugar","Count":3},
-        {"Name":"Milk","Count":1}
-      ],
-      "Selling_Price_Normal":"147",
-      "Selling_Price_Star":"220"
+      "Selling_Price_Normal": 43,
+      "Selling_Price_Star": 64
     },
     {
-      "Name":"Chapaa Asada Tacos",
-      "Furniture_Initial":"Prep Station",
-      "Furniture_Additional":["Stove"],
-      "Craft_Count":3,
-      "Focus":250,
-      "Cooking_Time":140,
-      "Effect":[
-        {"Name":"None","Description":""}
+      "Name": "Apple Pie",
+      "Furniture_Initial": "Standard Oven",
+      "Furniture_Additional": [],
+      "Craft_Count": 3,
+      "Focus": 325,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Butter", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Sweet Leaf", "Count": 1},
+        {"Name": "Apple", "Count": 3},
+        {"Name": "Spice Sprouts", "Count": 1}
       ],
-      "Ingredients_Initial":[
-        {"Name":"Salt","Count":1}
-      ],
-      "Ingredients_Other":[
-        {"Name":"Chapaa Meat","Count":1},
-        {"Name":"Butter","Count":1},
-        {"Name":"Spice Sprouts","Count":1},
-        {"Name":"Corn","Count":1},
-        {"Name":"Onion","Count":1}
-      ],
-      "Selling_Price_Normal":"46",
-      "Selling_Price_Star":"69"
+      "Selling_Price_Normal": 103,
+      "Selling_Price_Star": 154
     },
     {
-      "Name":"Chapaa Onigiri",
-      "Furniture_Initial":"Prep Station",
-      "Furniture_Additional":["Stove"],
-      "Craft_Count":3,
-      "Focus":200,
-      "Cooking_Time":120,
-      "Effect":[
-        {"Name":"None","Description":""}
+      "Name": "Bacon-Stuffed Mushrooms",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [
+        {"Name": "Butter"},
+        {"Name": "Any Red Meat"},
+        {"Name": "Tomato"},
+        {"Name": "Spice Sprouts"}
       ],
-      "Ingredients_Initial":[
-        {"Name":"Salt","Count":1}
+      "Craft_Count": 3,
+      "Focus": 225,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Any Mushroom", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Butter", "Count": 1},
+        {"Name": "Any Red Meat", "Count": 1},
+        {"Name": "Tomato", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1}
       ],
-      "Ingredients_Other":[
-        {"Name":"Rice","Count":1},
-        {"Name":"Chapaa Meat","Count":1},
-        {"Name":"Butter","Count":1},
-        {"Name":"Spice Sprouts","Count":1}
+      "Selling_Price_Normal": 29,
+      "Selling_Price_Star": 43.5
+    },
+    {
+      "Name": "Blueberry Pie",
+      "Furniture_Initial": "Standard Oven",
+      "Furniture_Additional": [],
+      "Craft_Count": 3,
+      "Focus": 225,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Butter", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Blueberry", "Count": 2},
+        {"Name": "Spice Sprouts", "Count": 1},
+        {"Name": "Sweet Leaf", "Count": 1}
       ],
-      "Selling_Price_Normal":"30",
-      "Selling_Price_Star":"45"
+      "Selling_Price_Normal": 60,
+      "Selling_Price_Star": 90
+    },
+    {
+      "Name": "Bouillabaisse",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [
+        {"Name": "Oyster Meat"},
+        {"Name": "Wheat"},
+        {"Name": "Potato"},
+        {"Name": "Onion"},
+        {"Name": "Spice Sprouts"}
+      ],
+      "Craft_Count": 3,
+      "Focus": 350,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Any Bass", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Oyster Meat", "Count": 1},
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Potato", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1}
+      ],
+      "Selling_Price_Normal": 57,
+      "Selling_Price_Star": 85.5
+    },
+    {
+      "Name": "Celebration Cake",
+      "Furniture_Initial": "Prep Station",
+      "Furniture_Additional": [],
+      "Craft_Count": 8,
+      "Focus": 825,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Blueberry", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Butter", "Count": 4},
+        {"Name": "Egg", "Count": 3},
+        {"Name": "Flour", "Count": 3},
+        {"Name": "Sweet Leaf", "Count": 4},
+        {"Name": "Any Fruit", "Count": 3},
+        {"Name": "Milk", "Count": 1},
+        {"Name": "Sugar", "Count": 3}
+      ],
+      "Selling_Price_Normal": 176,
+      "Selling_Price_Star": 264
+    },
+    {
+      "Name": "Chapaa Asada Tacos",
+      "Furniture_Initial": "Prep Station",
+      "Furniture_Additional": [
+        {"Name": "Salt"},
+        {"Name": "Butter"},
+        {"Name": "Spice Sprouts"},
+        {"Name": "Corn"},
+        {"Name": "Onion"}
+      ],
+      "Craft_Count": 5,
+      "Focus": 250,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Chapaa Meat", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Salt", "Count": 1},
+        {"Name": "Butter", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1},
+        {"Name": "Corn", "Count": 1},
+        {"Name": "Onion", "Count": 1}
+      ],
+      "Selling_Price_Normal": 46,
+      "Selling_Price_Star": 69
+    },
+    {
+      "Name": "Chapaa Masala",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [
+        {"Name": "Milk"},
+        {"Name": "Chapaa Meat"},
+        {"Name": "Butter"},
+        {"Name": "Spice Sprouts"},
+        {"Name": "Tomato"},
+        {"Name": "Dari Cloves"},
+        {"Name": "Wild Garlic"},
+        {"Name": "Heat Root"}
+      ],
+      "Craft_Count": 8,
+      "Focus": 525,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Chapaa Meat", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Milk", "Count": 1},
+        {"Name": "Butter", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 2},
+        {"Name": "Tomato", "Count": 1},
+        {"Name": "Dari Cloves", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1},
+        {"Name": "Heat Root", "Count": 1}
+      ],
+      "Selling_Price_Normal": 90,
+      "Selling_Price_Star": 135
+    },
+    {
+      "Name": "Chapaa Onigiri",
+      "Furniture_Initial": "Prep Station",
+      "Furniture_Additional": [
+        {"Name": "Salt"},
+        {"Name": "Rice"},
+        {"Name": "Chapaa Meat"},
+        {"Name": "Butter"},
+        {"Name": "Spice Sprouts"}
+      ],
+      "Craft_Count": 5,
+      "Focus": 200,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Chapaa Meat", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Salt", "Count": 1},
+        {"Name": "Rice", "Count": 1},
+        {"Name": "Butter", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1}
+      ],
+      "Selling_Price_Normal": 37,
+      "Selling_Price_Star": 55
+    },
+    {
+      "Name": "Chili Oil Dumplings",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 4,
+      "Focus": 350,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Spice Sprouts", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Any Red Meat", "Count": 1},
+        {"Name": "Any Vegetable", "Count": 1},
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Rice", "Count": 1},
+        {"Name": "Cooking Oil", "Count": 1},
+        {"Name": "Spicy Pepper", "Count": 1}
+      ],
+      "Selling_Price_Normal": 76,
+      "Selling_Price_Star": 114
+    },
+    {
+      "Name": "Congee",
+      "Furniture_Initial": "Campfire",
+      "Furniture_Additional": [],
+      "Craft_Count": 2,
+      "Focus": 50,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Rice", "Count": 2}],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 53,
+      "Selling_Price_Star": 79
+    },
+    {
+      "Name": "Crab Gumbo",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 5,
+      "Focus": 250,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Flour", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Oyster Meat", "Count": 1},
+        {"Name": "Cooking Oil", "Count": 2},
+        {"Name": "Any Crab", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Spicy Pepper", "Count": 1}
+      ],
+      "Selling_Price_Normal": 0,
+      "Selling_Price_Star": 0
+    },
+    {
+      "Name": "Crab Pot Pie",
+      "Furniture_Initial": "Standard Oven",
+      "Furniture_Additional": [],
+      "Craft_Count": 5,
+      "Focus": 225,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Butter", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Corn", "Count": 1},
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Any Vegetable", "Count": 1},
+        {"Name": "Any Crab", "Count": 1}
+      ],
+      "Selling_Price_Normal": 79,
+      "Selling_Price_Star": 118
+    },
+    {
+      "Name": "Cream of Mushroom Soup",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 5,
+      "Focus": 250,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Any Mushroom", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Milk", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1},
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1}
+      ],
+      "Selling_Price_Normal": 43,
+      "Selling_Price_Star": 64
+    },
+    {
+      "Name": "Cream of Tomato Soup",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 4,
+      "Focus": 275,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Tomato", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Milk", "Count": 1},
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1}
+      ],
+      "Selling_Price_Normal": 43,
+      "Selling_Price_Star": 64
+    },
+    {
+      "Name": "Creamy Carrot Soup",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 4,
+      "Focus": 100,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Carrot", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Spice Sprouts", "Count": 1},
+        {"Name": "Milk", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1}
+      ],
+      "Selling_Price_Normal": 26,
+      "Selling_Price_Star": 39
+    },
+    {
+      "Name": "Fish Stew",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 3,
+      "Focus": 100,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Any Fish", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Any Spice", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1}
+      ],
+      "Selling_Price_Normal": 19,
+      "Selling_Price_Star": 29
+    },
+    {
+      "Name": "Fish Tacos",
+      "Furniture_Initial": "Prep Station",
+      "Furniture_Additional": [],
+      "Craft_Count": 4,
+      "Focus": 100,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Spice Sprouts", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Any Fish", "Count": 1},
+        {"Name": "Corn", "Count": 1}
+      ],
+      "Selling_Price_Normal": 35,
+      "Selling_Price_Star": 52
+    },
+    {
+      "Name": "Fisherman's Brew",
+      "Furniture_Initial": "Campfire",
+      "Furniture_Additional": [],
+      "Craft_Count": 2,
+      "Focus": 0,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Emerald Carpet Moss", "Count": 1},
+        {"Name": "Crystal Lake Lotus", "Count": 1}
+      ],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 7,
+      "Selling_Price_Star": 10
+    },
+    {
+      "Name": "Fried Catfish Dinner",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 5,
+      "Focus": 225,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Any Catfish", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Flour", "Count": 1},
+        {"Name": "Any Spice", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Tomato", "Count": 1}
+      ],
+      "Selling_Price_Normal": 42,
+      "Selling_Price_Star": 63
+    },
+    {
+      "Name": "Grilled Fish",
+      "Furniture_Initial": "Campfire",
+      "Furniture_Additional": [],
+      "Craft_Count": 2,
+      "Focus": 50,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Any Fish", "Count": 2}],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 44,
+      "Selling_Price_Star": 66
+    },
+    {
+      "Name": "Grilled Meat",
+      "Furniture_Initial": "Campfire",
+      "Furniture_Additional": [],
+      "Craft_Count": 2,
+      "Focus": 50,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Any Meat", "Count": 2}],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 26,
+      "Selling_Price_Star": 39
+    },
+    {
+      "Name": "Grilled Mushroom",
+      "Furniture_Initial": "Campfire",
+      "Furniture_Additional": [],
+      "Craft_Count": 2,
+      "Focus": 50,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Any Mushroom", "Count": 3}],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 24,
+      "Selling_Price_Star": 36
+    },
+    {
+      "Name": "Grilled Oyster",
+      "Furniture_Initial": "Campfire",
+      "Furniture_Additional": [],
+      "Craft_Count": 2,
+      "Focus": 55,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Oyster Meat", "Count": 3}],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 27,
+      "Selling_Price_Star": 41
+    },
+    {
+      "Name": "Hearty Vegetable Soup",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 4,
+      "Focus": 100,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Any Vegetable", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Any Spice", "Count": 1},
+        {"Name": "Any Mushroom", "Count": 1}
+      ],
+      "Selling_Price_Normal": 25,
+      "Selling_Price_Star": 38
+    },
+    {
+      "Name": "Hot Hounds",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 4,
+      "Focus": 175,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Cooking Oil", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Any Red Meat", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Spicy Pepper", "Count": 1}
+      ],
+      "Selling_Price_Normal": 0,
+      "Selling_Price_Star": 0
+    },
+    {
+      "Name": "Loaded Potato Soup",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 5,
+      "Focus": 250,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "Potato", "Count": 1}],
+      "Ingredients_Other": [
+        {"Name": "Butter", "Count": 1},
+        {"Name": "Any Red Meat", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1}
+      ],
+      "Selling_Price_Normal": 53,
+      "Selling_Price_Star": 79
+    },
+    {
+      "Name": "Macaron",
+      "Furniture_Initial": "Mixing Station",
+      "Furniture_Additional": [],
+      "Craft_Count": 4,
+      "Focus": 100,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Flour", "Count": 1},
+        {"Name": "Egg", "Count": 1},
+        {"Name": "Milk", "Count": 1},
+        {"Name": "Sweet Leaf", "Count": 1}
+      ],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 17,
+      "Selling_Price_Star": 26
+    },
+    {
+      "Name": "Meaty Stir Fry",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 5,
+      "Focus": 250,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Cooking Oil", "Count": 1},
+        {"Name": "Any Red Meat", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1},
+        {"Name": "Any Vegetable", "Count": 1},
+        {"Name": "Rice", "Count": 1}
+      ],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 33,
+      "Selling_Price_Star": 49
+    },
+    {
+      "Name": "Muujin Bahari",
+      "Furniture_Initial": "Standard Oven",
+      "Furniture_Additional": [],
+      "Craft_Count": 14,
+      "Focus": 925,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Butter", "Count": 1},
+        {"Name": "Wheat", "Count": 2},
+        {"Name": "Corn", "Count": 2},
+        {"Name": "Salt", "Count": 3}
+      ],
+      "Ingredients_Other": [
+        {"Name": "Chapaa Meat", "Count": 1},
+        {"Name": "Any Mushroom", "Count": 1},
+        {"Name": "Spicy Pepper", "Count": 1},
+        {"Name": "Onion", "Count": 2},
+        {"Name": "Spice Sprouts", "Count": 2},
+        {"Name": "Wild Garlic", "Count": 1},
+        {"Name": "Muujin Meat", "Count": 3},
+        {"Name": "Plant Fiber", "Count": 3},
+        {"Name": "Cooking Oil", "Count": 3},
+        {"Name": "Vinegar", "Count": 1},
+        {"Name": "Egg", "Count": 1}
+      ],
+      "Selling_Price_Normal": 192,
+      "Selling_Price_Star": 288
+    },
+    {
+      "Name": "Oysters Akwindu",
+      "Furniture_Initial": "Standard Oven",
+      "Furniture_Additional": [],
+      "Craft_Count": 9,
+      "Focus": 350,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Oyster Meat", "Count": 1},
+        {"Name": "Salt", "Count": 5},
+        {"Name": "Spicy Pepper", "Count": 1},
+        {"Name": "Tomato", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1},
+        {"Name": "Heat Root", "Count": 1},
+        {"Name": "Butter", "Count": 1},
+        {"Name": "Chapaa Meat", "Count": 1}
+      ],
+      "Selling_Price_Normal": 64,
+      "Selling_Price_Star": 96
+    },
+    {
+      "Name": "Palian Onion Soup",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 4,
+      "Focus": 100,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Flour", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1}
+      ],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 18,
+      "Selling_Price_Star": 27
+    },
+    {
+      "Name": "Petit Fives",
+      "Furniture_Initial": "Prep Station",
+      "Furniture_Additional": [],
+      "Craft_Count": 8,
+      "Focus": 400,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Sugar", "Count": 1},
+        {"Name": "Butter", "Count": 2},
+        {"Name": "Egg", "Count": 1},
+        {"Name": "Flour", "Count": 1}
+      ],
+      "Ingredients_Other": [
+        {"Name": "Sweet Leaf", "Count": 2},
+        {"Name": "Milk", "Count": 1},
+        {"Name": "Any Fruit", "Count": 1},
+        {"Name": "Corn", "Count": 1}
+      ],
+      "Selling_Price_Normal": 75,
+      "Selling_Price_Star": 112
+    },
+    {
+      "Name": "Phoenixfire Relleno",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 6,
+      "Focus": 300,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Egg", "Count": 1},
+        {"Name": "Flour", "Count": 1},
+        {"Name": "Any Red Meat", "Count": 1}
+      ],
+      "Ingredients_Other": [
+        {"Name": "Spicy Pepper", "Count": 2},
+        {"Name": "Spice Sprouts", "Count": 1},
+        {"Name": "Cooking Oil", "Count": 1}
+      ],
+      "Selling_Price_Normal": 45,
+      "Selling_Price_Star": 67
+    },
+    {
+      "Name": "Poke Bowl",
+      "Furniture_Initial": "Mixing Station",
+      "Furniture_Additional": [],
+      "Craft_Count": 9,
+      "Focus": 525,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Vinegar", "Count": 1},
+        {"Name": "Any Fish", "Count": 1},
+        {"Name": "Any Spice", "Count": 1},
+        {"Name": "Tomato", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Dari Cloves", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1},
+        {"Name": "Heat Root", "Count": 1}
+      ],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 0,
+      "Selling_Price_Star": 0
+    },
+    {
+      "Name": "Ramen",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 4,
+      "Focus": 125,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Any Mushroom", "Count": 1},
+        {"Name": "Egg", "Count": 1},
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1}
+      ],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 25,
+      "Selling_Price_Star": 37
+    },
+    {
+      "Name": "Sashimi",
+      "Furniture_Initial": "Prep Station",
+      "Furniture_Additional": [],
+      "Craft_Count": 3,
+      "Focus": 100,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Spice Sprouts", "Count": 1},
+        {"Name": "Rice", "Count": 1},
+        {"Name": "Any Fish", "Count": 1}
+      ],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 23,
+      "Selling_Price_Star": 34
+    },
+    {
+      "Name": "Sernuk Noodle Stew",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 5,
+      "Focus": 225,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Sernuk Meat", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1},
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Carrot", "Count": 1}
+      ],
+      "Ingredients_Other": [],
+      "Selling_Price_Normal": 42,
+      "Selling_Price_Star": 63
+    },
+    {"Name": "Shepp's Pie",
+      "Furniture_Initial": "Standard Oven",
+      "Furniture_Additional": [],
+      "Craft_Count": 6,
+      "Focus": 325,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [
+        {"Name": "Salt", "Count": 1},
+        {"Name": "Corn", "Count": 1},
+        {"Name": "Potato", "Count": 1},
+        {"Name": "Chapaa Meat", "Count": 1},
+        {"Name": "Butter", "Count": 1}
+      ],
+      "Ingredients_Other": [
+        {"Name": "Any Vegetable", "Count": 1},
+        {"Name": "Any Spice", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Milk", "Count": 1}
+      ],
+      "Selling_Price_Normal": 50,
+      "Selling_Price_Star": 75
+    },
+    {
+      "Name": "Spicy Rice Cakes",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 3,
+      "Focus": 425,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "None", "Count": 0}],
+      "Ingredients_Other": [
+        {"Name": "Cooking Oil", "Count": 1},
+        {"Name": "Spicy Pepper", "Count": 1},
+        {"Name": "Dari Cloves", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1},
+        {"Name": "Heat Root", "Count": 1},
+        {"Name": "Rice", "Count": 1}
+      ],
+      "Selling_Price_Normal": 0,
+      "Selling_Price_Star": 0
+    },
+    {
+      "Name": "Spicy Stir Fry",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 3,
+      "Focus": 325,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "None", "Count": 0}],
+      "Ingredients_Other": [
+        {"Name": "Salt", "Count": 1},
+        {"Name": "Any Red Meat", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1},
+        {"Name": "Any Vegetable", "Count": 1},
+        {"Name": "Rice", "Count": 1},
+        {"Name": "Cooking Oil", "Count": 1},
+        {"Name": "Spicy Pepper", "Count": 1}
+      ],
+      "Selling_Price_Normal": 46,
+      "Selling_Price_Star": 69
+    },
+    {
+      "Name": "Steak Dinner",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 3,
+      "Focus": 225,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "None", "Count": 0}],
+      "Ingredients_Other": [
+        {"Name": "Any Meat", "Count": 1},
+        {"Name": "Wheat", "Count": 1},
+        {"Name": "Butter", "Count": 1},
+        {"Name": "Spice Sprouts", "Count": 1}
+      ],
+      "Selling_Price_Normal": 30,
+      "Selling_Price_Star": 45
+    },
+    {
+      "Name": "Sushi",
+      "Furniture_Initial": "Prep Station",
+      "Furniture_Additional": [],
+      "Craft_Count": 3,
+      "Focus": 325,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "None", "Count": 0}],
+      "Ingredients_Other": [
+        {"Name": "Dari Cloves", "Count": 1},
+        {"Name": "Any Fish", "Count": 1},
+        {"Name": "Heat Root", "Count": 1},
+        {"Name": "Vinegar", "Count": 1},
+        {"Name": "Rice", "Count": 1},
+        {"Name": "Sweet Leaf", "Count": 1}
+      ],
+      "Selling_Price_Normal": 118,
+      "Selling_Price_Star": 177
+    },
+    {
+      "Name": "Trout Dinner",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 3,
+      "Focus": 200,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "None", "Count": 0}],
+      "Ingredients_Other": [
+        {"Name": "Any Trout", "Count": 1},
+        {"Name": "Any Spice", "Count": 1},
+        {"Name": "Potato", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1}
+      ],
+      "Selling_Price_Normal": 45,
+      "Selling_Price_Star": 67
+    },
+    {
+      "Name": "Veggie Fried Rice",
+      "Furniture_Initial": "Standard Stove",
+      "Furniture_Additional": [],
+      "Craft_Count": 3,
+      "Focus": 225,
+      "Cooking_Time": 0,
+      "Effect": [{"Name": "None", "Description": ""}],
+      "Ingredients_Initial": [{"Name": "None", "Count": 0}],
+      "Ingredients_Other": [
+        {"Name": "Cooking Oil", "Count": 1},
+        {"Name": "Egg", "Count": 1},
+        {"Name": "Onion", "Count": 1},
+        {"Name": "Wild Garlic", "Count": 1},
+        {"Name": "Carrot", "Count": 1},
+        {"Name": "Rice", "Count": 1}
+      ],
+      "Selling_Price_Normal": 44,
+      "Selling_Price_Star": 66
     }
   ]
 }

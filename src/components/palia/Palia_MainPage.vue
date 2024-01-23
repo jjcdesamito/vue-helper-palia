@@ -20,6 +20,7 @@ export default {
             searchValue: '',
             sortBy: 'name',
             ascending: true,
+            filteredDataCount:dataFood.data.length,
         }
     },
     mounted() {
@@ -67,7 +68,15 @@ export default {
                     return 0
                 }
                 else if (this.sortBy == 'sellingPrice') {
-                    return a.Selling_Price_Normal - b.Selling_Price_Normal
+                    let fa = a.Selling_Price_Normal, fb = b.Selling_Price_Normal
+
+                    if (fa < fb) {
+                        return -1
+                    }
+                    if (fa > fb) {
+                        return 1
+                    }
+                    return 0
                 }
             })
 
@@ -75,6 +84,8 @@ export default {
             if (!this.ascending) {
                 tempRecipes.reverse()
             }
+
+            this.filteredDataCount = tempRecipes.length;
 
             return tempRecipes
         }
@@ -111,6 +122,7 @@ export default {
                 <i v-if="ascending">Ascending</i>
                 <i v-else>Descending</i>
             </button>
+            <div class="">{{filteredDataCount}}</div>
         </div>
         <TransitionGroup name="recipe">
             <div class="itemContainer" v-for="item in filteredRecipes" :key="item.Name">
